@@ -1,6 +1,6 @@
-export class Nasa {
-    date: Date;
-    explanation: string;
-    title: string;
-    url: string;
+export interface Nasa {
+    date: String;
+    explanation: String;
+    title: String;
+    url: String;
 }

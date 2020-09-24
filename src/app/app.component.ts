@@ -12,19 +12,21 @@ import { Nasa } from './models/nasa';
 export class AppComponent implements OnInit {
   title = 'angular-jwt-api';
 
-  nasaAPOD: Nasa[];
+  nasaAPOD: Array<any>;
 
   constructor(
-    private nasaApiService: NasaApiService,) {
+    private nasaApiService: NasaApiService) {
 
   }
 
   ngOnInit() {
     this.nasaApiService.getNasaApi().subscribe(
       data => {
+        console.log(data);
         this.nasaAPOD = data;
       }
     );
+
   }
 
 }
