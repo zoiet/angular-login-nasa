@@ -12,7 +12,7 @@ import { Nasa } from './models/nasa';
 export class AppComponent implements OnInit {
   title = 'angular-jwt-api';
 
-  nasaAPOD: Array<any>;
+  nasaAPOD: Nasa[];
 
   constructor(
     private nasaApiService: NasaApiService) {
