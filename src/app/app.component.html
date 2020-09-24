@@ -391,6 +391,10 @@
     </a>
 
   </div>
+  <div class="card-container" [formGroup]="formGroup" (ngSubmit)="loginProcess()">
+    <input placeholder="Email" formControlName="email">
+    <input type="password" placeholder="password" formControlName="password">
+  </div>
 
   <!-- Next Steps -->
   <h2>Next Steps</h2>
